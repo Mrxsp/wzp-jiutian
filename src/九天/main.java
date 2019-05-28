@@ -6,7 +6,7 @@ public class main {
 		System.out.println("Hello World");
 
 		// TODO Auto-generated method stub
-
+		
 	}
 
 }
