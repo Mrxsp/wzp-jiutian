@@ -31,7 +31,7 @@ class FiveChessFrame extends JFrame implements MouseListener {
 
 	public FiveChessFrame() {
 		this.setTitle("史上最难五子棋");// 设置窗体标题
-		this.setSize(650, 650); // 设置窗体大
+		this.setSize(670, 650); // 设置窗体大
 		this.setResizable(false);// 窗体大小不可改变
 		float color[] = Color.RGBtoHSB(202, 241, 244, new float[] { 123, 128,
 				210 });// 生成一个自定义的背景颜色
@@ -43,32 +43,32 @@ class FiveChessFrame extends JFrame implements MouseListener {
 
 		// 初始化开始按钮
 		start = new Button("开始");// 按钮的名称
-		start.setBounds(500, 200, 120, 50);// 按钮的位置及大小
+		start.setBounds(10, 30, 120, 50);// 按钮的位置及大小
 		start.setFont(new Font("Default", Font.BOLD, 30));// 设置按钮字体的大小
 		start.addMouseListener(this);// 为按钮加入监听器
 		add(start);// 加入按钮
 
 		// 初始化说明按钮
 		explain = new Button("说明");
-		explain.setBounds(500, 280, 120, 50);// 设置按钮的位置及大小
+		explain.setBounds(140, 30, 120, 50);// 设置按钮的位置及大小
 		explain.setFont(new Font("Default", Font.BOLD, 30));// 设置按钮字体的大小
 		explain.addMouseListener(this);// 为按钮加入监听器
 		add(explain);
 
 		regret = new Button("悔棋");
-		regret.setBounds(500, 360, 120, 50);
+		regret.setBounds(270, 30, 120, 50);
 		regret.setFont(new Font("Default", Font.BOLD, 30));// 设置按钮字体的大小
 		regret.addMouseListener(this);// 为按钮加入监听器
 		add(regret);
 
 		defeat = new Button("认输");
-		defeat.setBounds(500, 440, 120, 50);
+		defeat.setBounds(400, 30, 120, 50);
 		defeat.setFont(new Font("Default", Font.BOLD, 30));// 设置按钮字体的大小
 		defeat.addMouseListener(this);
 		add(defeat);
 
 		quit = new Button("退出");
-		quit.setBounds(500, 520, 120, 50);
+		quit.setBounds(530, 30, 120, 50);
 		quit.setFont(new Font("Default", Font.BOLD, 30));// 设置按钮字体的大小
 		quit.addMouseListener(this);
 		add(quit);
@@ -79,9 +79,9 @@ class FiveChessFrame extends JFrame implements MouseListener {
 	public void paint(Graphics g) {
 		g.setColor(Color.magenta);// 设置颜色
 		g.setFont(new Font("华文琥珀", Font.BOLD, 45));// 设置字体
-		g.drawString("五", 90, 100);// 输入字体
-		g.drawString("子", 292, 101);// 输入字体
-		g.drawString("棋", 490, 100);// 输入字体
+		g.drawString("五", 550, 200);// 输入字体
+		g.drawString("子", 550, 400);// 输入字体
+		g.drawString("棋", 550, 600);// 输入字体
 
 		// 游戏信息显示
 		float color[] = Color.RGBtoHSB(202, 241, 244, new float[] { 123, 128,
